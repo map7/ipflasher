@@ -1,0 +1,38 @@
+* IPFlasher
+
+** What?
+
+It flashes the IP address using the LED. It's simple but it works.
+
+| 3 normal flashes | Starting |
+| 0.5 sec flashes  | 1 to 9   |
+| long flash       | zero     |
+| 6 quick flashes  | dot      |
+
+Using this table you could easily find the IP address.
+
+** Why?
+
+This is used on a Raspberry PI which streams to our meetings to Youtube. 
+When we get to the venue we need to work out the IP address so we can 
+access the Raspberry PI.
+
+** How?
+
+The python script ip_blink.py is started on boot and watches for a button
+on the GPIO of the Raspberry PI to be pushed. Once that is pushed it flashes
+a LED on the GPIO to notify the user of the IP address it has received on the
+WiFi.
+
+** TODO
+
+Suggestions so far have been
+- Could I use morse code instead?
+- Just flash the last three numbers, this could be faster.
+- Use an OLED display.
+
+I most likely start using an OLED display but thought this would be useful
+in the future incase I all I have is a button and an LED and want to show 
+information to the user in blips and blops.
+
+
