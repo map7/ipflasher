@@ -24,7 +24,7 @@ on the GPIO of the Raspberry PI to be pushed. Once that is pushed it flashes
 a LED on the GPIO to notify the user of the IP address it has received on the
 WiFi.
 
-** TODO
+** Next
 
 Suggestions so far have been
 - Could I use morse code instead?
